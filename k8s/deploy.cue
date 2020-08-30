@@ -1,3 +1,5 @@
+package k8s
+
 apiVersion: "apps/v1"
 kind:       "Deployment"
 metadata: name: "hello-kubernetes"
