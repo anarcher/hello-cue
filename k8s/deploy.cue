@@ -16,6 +16,7 @@ deployment: {
                 name:  #config.name
                 image: "paulbouwer/hello-kubernetes:1.5"
                 ports: [{
+                    name: "http"
                     containerPort: 8080
                 }]
             }]
