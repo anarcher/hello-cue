@@ -2,14 +2,17 @@ package k8s
 
 apiVersion: "apps/v1"
 kind:       "Deployment"
-metadata: name: "hello-kubernetes"
+metadata: {
+    namespace: config.namespace
+    name: config.name
+}
 spec: {
 	replicas: 3
-	selector: matchLabels: app: "hello-kubernetes"
+	selector: matchLabels: app: config.name
 	template: {
-		metadata: labels: app: "hello-kubernetes"
+		metadata: labels: app: config.name
 		spec: containers: [{
-			name:  "hello-kubernetes"
+			name:  config.name
 			image: "paulbouwer/hello-kubernetes:1.5"
 			ports: [{
 				containerPort: 8080

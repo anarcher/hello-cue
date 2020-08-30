@@ -1,3 +1,3 @@
 package k8s
 
-metadata: namespace: "alpha"
+config: namespace: "alpha"
