@@ -4,4 +4,5 @@ package k8s
     namespace: *name | string
     name: string
     replicas: *1 | >=1 & <10
+    service: use: *false | bool
 }
