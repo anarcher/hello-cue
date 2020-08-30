@@ -7,7 +7,7 @@ metadata: {
     name: config.name
 }
 spec: {
-	replicas: 3
+	replicas: config.replicas
 	selector: matchLabels: app: config.name
 	template: {
 		metadata: labels: app: config.name

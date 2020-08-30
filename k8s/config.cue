@@ -1,6 +1,7 @@
 package k8s
 
 config: {
-    namespace: string
+    namespace: *name | string
     name: "hello"
+    replicas: *1 | int
 }
