@@ -1,6 +1,5 @@
 
 1. `cue import `
-2. `cue eval` `cue export`
-3. `cue export | yq r -P -`
-4. `mkdir alpha`
-5.  `cue dump ./alpha`
+2. `cue eval ./alpha/` `cue export ./alpha/`
+3. `cue export --out=yaml ./alpha/`
+4. `cue dump ./alpha`
