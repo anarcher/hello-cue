@@ -1,5 +1,5 @@
 package k8s
 
 #config: {
-    service: use: true
+    replicas: 4 
 }
